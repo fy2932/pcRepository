@@ -1,0 +1,673 @@
+.wrap {
+  height: 3000px;
+  position: relative;
+}
+.toolBar {
+  width: 300px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #7a6e6e;
+  transition: 0.5s;
+}
+.toolBar.toolOut {
+  right: 0;
+}
+.toolBar.toolIn {
+  right: -294px;
+}
+.toolBar .toolContent {
+  width: 294px;
+  height: 100%;
+  position: absolute;
+  left: 6px;
+  top: 0;
+  background-color: bisque;
+  z-index: 10;
+}
+.toolBar .toolBtn {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: -29px;
+  cursor: pointer;
+  background-color: #7a6e6e;
+}
+.toolBar .toolBtn.cross {
+  background-image: url(../images/cross.png);
+  background-size: cover;
+}
+.toolBar .toolBtn.list {
+  background-image: url(../images/list.png);
+  background-size: cover;
+}
+.toolBar .toolMenu {
+  position: absolute;
+  left: -29px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.toolBar .toolMenu ul li {
+  width: 35px;
+  height: 35px;
+  position: relative;
+}
+.toolBar .toolMenu ul li i {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background: #7a6e6e url(../images/toolbars.png) -87px -174px no-repeat;
+}
+.toolBar .toolMenu ul li em {
+  width: 62px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  background-color: pink;
+  color: #fff;
+  position: absolute;
+  left: 35px;
+  transition: 0.5s;
+}
+.toolBar .toolMenu ul li:hover i {
+  background-color: pink;
+}
+.toolBar .toolMenu ul li:hover em {
+  left: -62px;
+}
+.header {
+  width: 100%;
+}
+.header .top {
+  background-color: #eaeaea;
+  height: 30px;
+  line-height: 30px;
+}
+.header .top .topMain {
+  width: 1200px;
+  height: 30px;
+  margin: 0 auto;
+}
+.header .top .topMain .left {
+  float: left;
+}
+.header .top .topMain .left p {
+  float: left;
+}
+.header .top .topMain .left > a {
+  float: left;
+}
+.header .top .topMain .left > a:nth-of-type(1) {
+  margin: 0 5px;
+}
+.header .top .topMain .right {
+  float: right;
+}
+.header .top .topMain .right a {
+  padding: 0 10px;
+  border-left: 1px solid #b3aeae;
+}
+.header .top .topMain .right a:nth-of-type(1) {
+  border-left: none;
+}
+.header .logoAndSearch .bottomMain {
+  width: 1200px;
+  margin: 0 auto;
+  *zoom: 1;
+}
+.header .logoAndSearch .bottomMain::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.header .logoAndSearch .bottomMain .logo {
+  float: left;
+  margin: 25px 45px;
+}
+.header .logoAndSearch .bottomMain .logo img {
+  width: 175px;
+  height: 56px;
+}
+.header .logoAndSearch .bottomMain .search {
+  float: right;
+  margin-top: 35px;
+}
+.header .logoAndSearch .bottomMain .search input {
+  float: left;
+  box-sizing: border-box;
+  width: 490px;
+  height: 32px;
+  padding: 0 4px;
+  border: 2px solid #ea4a36;
+}
+.header .logoAndSearch .bottomMain .search button {
+  float: left;
+  width: 68px;
+  height: 32px;
+  background-color: #ea4a36;
+  color: #fff;
+  outline-style: none;
+  border: none;
+}
+.shopNav {
+  border-bottom: 2px solid #e1251b;
+}
+.shopNav .shopMain {
+  width: 1200px;
+  margin: 0 auto;
+  *zoom: 1;
+}
+.shopNav .shopMain::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.shopNav .shopMain h4 {
+  width: 210px;
+  height: 50px;
+  background-color: #e1251b;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  float: left;
+  text-align: center;
+  line-height: 50px;
+}
+.shopNav .shopMain ul li {
+  float: left;
+  margin: 0 22px;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  line-height: 50px;
+}
+.main .mainCon {
+  width: 1200px;
+  margin: 15px auto 0;
+}
+.main .mainCon .pathNav {
+  padding: 9px 15px 9px 0;
+}
+.main .mainCon .pathNav i {
+  padding: 0 5px;
+  color: #ccc;
+}
+.main .mainCon .shopWrap {
+  margin: 5px 0 15px;
+  *zoom: 1;
+}
+.main .mainCon .shopWrap::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.main .mainCon .shopWrap .previwWrap {
+  float: left;
+  width: 400px;
+}
+.main .mainCon .shopWrap .previwWrap .previw {
+  width: 100%;
+  height: 400px;
+  border: 1px solid #dfdfdf;
+  position: relative;
+}
+.main .mainCon .shopWrap .previwWrap .previw .smallImgBox {
+  position: relative;
+}
+.main .mainCon .shopWrap .previwWrap .previw .smallImgBox .mask {
+  width: 200px;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid #ddd;
+}
+.main .mainCon .shopWrap .previwWrap .previw .bigImgBox {
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  position: absolute;
+  left: 420px;
+  top: 0px;
+}
+.main .mainCon .shopWrap .previwWrap .previw .bigImgBox img {
+  width: 800px;
+  height: 800px;
+}
+.main .mainCon .shopWrap .previwWrap .thumbnail {
+  width: 100%;
+  margin-top: 5px;
+  *zoom: 1;
+}
+.main .mainCon .shopWrap .previwWrap .thumbnail::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.main .mainCon .shopWrap .previwWrap .thumbnail a {
+  float: left;
+  width: 10px;
+  height: 54px;
+  border: 1px solid #ccc;
+  background-color: #ebebeb;
+  text-align: center;
+  line-height: 54px;
+}
+.main .mainCon .shopWrap .previwWrap .thumbnail a:nth-of-type(1) {
+  margin-right: 4px;
+}
+.main .mainCon .shopWrap .previwWrap .thumbnail .itemWrap {
+  width: 372px;
+  height: 56px;
+  overflow: hidden;
+  float: left;
+  position: relative;
+}
+.main .mainCon .shopWrap .previwWrap .thumbnail .itemWrap ul {
+  width: 9999px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 0.5s;
+}
+.main .mainCon .shopWrap .previwWrap .thumbnail .itemWrap ul li {
+  border: 1px solid #ccc;
+  width: 50px;
+  height: 50px;
+  float: left;
+  padding: 2px;
+  margin-right: 20px;
+}
+.main .mainCon .shopWrap .previwWrap .thumbnail .itemWrap ul li img {
+  width: 100%;
+  height: 100%;
+}
+.main .mainCon .shopWrap .detail {
+  float: right;
+  width: 700px;
+}
+.main .mainCon .shopWrap .detail .shop .shopInfo h4 {
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 15px;
+}
+.main .mainCon .shopWrap .detail .shop .shopInfo p {
+  color: #e12228;
+  margin-top: 15px;
+}
+.main .mainCon .shopWrap .detail .shop .priceWrap {
+  margin-top: 10px;
+  line-height: 28px;
+  background-color: #fee9ec;
+  padding: 7px;
+  *zoom: 1;
+}
+.main .mainCon .shopWrap .detail .shop .priceWrap::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.main .mainCon .shopWrap .detail .shop .priceWrap .priceTop {
+  *zoom: 1;
+}
+.main .mainCon .shopWrap .detail .shop .priceWrap .priceTop::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.main .mainCon .shopWrap .detail .shop .priceWrap .priceTop .title {
+  margin-right: 15px;
+  float: left;
+}
+.main .mainCon .shopWrap .detail .shop .priceWrap .priceTop .price {
+  float: left;
+  color: #cc1122;
+}
+.main .mainCon .shopWrap .detail .shop .priceWrap .priceTop .price em {
+  font-size: 16px;
+}
+.main .mainCon .shopWrap .detail .shop .priceWrap .priceTop .price span {
+  font-size: 24px;
+  font-weight: 700;
+}
+.main .mainCon .shopWrap .detail .shop .priceWrap .priceTop .price i {
+  font-size: 12px;
+}
+.main .mainCon .shopWrap .detail .shop .priceWrap .priceTop .comment {
+  float: right;
+}
+.main .mainCon .shopWrap .detail .shop .priceWrap .priceBottom {
+  line-height: 28px;
+  *zoom: 1;
+}
+.main .mainCon .shopWrap .detail .shop .priceWrap .priceBottom::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.main .mainCon .shopWrap .detail .shop .priceWrap .priceBottom .title {
+  float: left;
+  margin-right: 15px;
+}
+.main .mainCon .shopWrap .detail .shop .priceWrap .priceBottom .word {
+  float: left;
+  width: 520px;
+}
+.main .mainCon .shopWrap .detail .shop .priceWrap .priceBottom .word i {
+  background: #c81623;
+  padding: 3px;
+  color: #fff;
+}
+.main .mainCon .shopWrap .detail .shop .priceWrap .priceBottom .word span {
+  color: #999;
+}
+.main .mainCon .shopWrap .detail .shop .supportWrap {
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 5px;
+}
+.main .mainCon .shopWrap .detail .shop .supportWrap > div {
+  margin-top: 10px;
+  line-height: 28px;
+  *zoom: 1;
+}
+.main .mainCon .shopWrap .detail .shop .supportWrap > div::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.main .mainCon .shopWrap .detail .shop .supportWrap > div .title {
+  float: left;
+  margin-right: 15px;
+}
+.main .mainCon .shopWrap .detail .shop .supportWrap > div .word {
+  float: left;
+  width: 520px;
+  color: #999;
+}
+.main .mainCon .shopWrap .detail .chooseWrap .choosed {
+  margin-top: 10px;
+  line-height: 28px;
+}
+.main .mainCon .shopWrap .detail .chooseWrap .choosed mark {
+  background-color: snow;
+  border: 1px solid #ddd;
+  padding: 10px 20px;
+  margin-right: 20px;
+}
+.main .mainCon .shopWrap .detail .chooseWrap .choosed mark a {
+  margin-left: 20px;
+  color: red;
+}
+.main .mainCon .shopWrap .detail .chooseWrap .choose {
+  margin-top: 10px;
+  line-height: 28px;
+}
+.main .mainCon .shopWrap .detail .chooseWrap .choose dl {
+  *zoom: 1;
+  margin: 13px 0;
+}
+.main .mainCon .shopWrap .detail .chooseWrap .choose dl::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.main .mainCon .shopWrap .detail .chooseWrap .choose dl dt {
+  float: left;
+  margin-right: 15px;
+}
+.main .mainCon .shopWrap .detail .chooseWrap .choose dl dd {
+  float: left;
+  margin-right: 5px;
+  color: #666;
+  line-height: 24px;
+  padding: 2px 14px;
+  border-right: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+  border-top: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+.main .mainCon .shopWrap .detail .chooseWrap .choose dl dd:nth-of-type(1) {
+  color: red;
+}
+.main .mainCon .shopWrap .detail .chooseWrap .shopCar .control {
+  float: left;
+  width: 55px;
+  margin-right: 15px;
+  *zoom: 1;
+  position: relative;
+}
+.main .mainCon .shopWrap .detail .chooseWrap .shopCar .control::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.main .mainCon .shopWrap .detail .chooseWrap .shopCar .control input {
+  float: left;
+  width: 38px;
+  height: 37px;
+  text-align: center;
+  line-height: 37px;
+  border: 1px solid #ddd;
+  color: #555;
+}
+.main .mainCon .shopWrap .detail .chooseWrap .shopCar .control a {
+  float: left;
+  width: 15px;
+  height: 18px;
+  background-color: #f1f1f1;
+  color: #666;
+  border: 1px solid #ddd;
+}
+.main .mainCon .shopWrap .detail .chooseWrap .shopCar .control a:nth-of-type(1) {
+  position: absolute;
+  right: 0px;
+}
+.main .mainCon .shopWrap .detail .chooseWrap .shopCar .control a:nth-of-type(2) {
+  position: absolute;
+  right: 0px;
+  top: 20px;
+  border-top: none;
+}
+.main .mainCon .shopWrap .detail .chooseWrap .shopCar .btn {
+  float: left;
+  border: none;
+  outline: none;
+  height: 36px;
+  line-height: 36px;
+  color: #fff;
+  padding: 0 25px;
+  background-color: #e1251b;
+}
+.shopDetail {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 30px;
+  *zoom: 1;
+}
+.shopDetail::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.shopDetail aside {
+  float: left;
+  width: 210px;
+  border: 1px solid #ccc;
+}
+.shopDetail aside .tabWrap {
+  height: 40px;
+  width: 210px;
+  *zoom: 1;
+}
+.shopDetail aside .tabWrap::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.shopDetail aside .tabWrap h4 {
+  height: 40px;
+  line-height: 40px;
+  width: 50%;
+  float: left;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  border-top: 3px solid #fff;
+}
+.shopDetail aside .tabWrap h4.active {
+  border-top: 3px solid #e1251b;
+  border-bottom: 1px solid #fff;
+}
+.shopDetail aside .tabContent {
+  padding: 10px;
+}
+.shopDetail aside .tabContent > div {
+  display: none;
+}
+.shopDetail aside .tabContent > div.active {
+  display: block;
+}
+.shopDetail aside .tabContent > div .partList li {
+  width: 50%;
+  float: left;
+  line-height: 28px;
+  border-bottom: 1px dashed #ededed;
+}
+.shopDetail aside .tabContent > div .goodsList .item {
+  margin: 5px 0 15px;
+  border-bottom: 1px solid #ededed;
+}
+.shopDetail aside .tabContent > div .goodsList .item .partImg {
+  text-align: center;
+}
+.shopDetail aside .tabContent > div .goodsList .item .partPrice {
+  font-size: 16px;
+  color: #c31623;
+}
+.shopDetail aside .tabContent > div .goodsList .item .partA {
+  margin: 5px 0;
+  text-align: center;
+}
+.shopDetail aside .tabContent > div .goodsList .item .partA a {
+  border: 1px solid #8c8c8c;
+  padding: 2px 14px;
+  line-height: 18px;
+}
+.shopDetail .detail {
+  float: right;
+  *zoom: 1;
+  width: 980px;
+}
+.shopDetail .detail::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.shopDetail .detail .fitting {
+  float: right;
+  width: 100%;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+.shopDetail .detail .fitting h4 {
+  padding: 5px 0 5px 15px;
+  background-color: #f1f1f1;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+}
+.shopDetail .detail .fitting .goodSuits {
+  height: 170px;
+  padding-top: 10px;
+}
+.shopDetail .detail .fitting .goodSuits .master {
+  float: left;
+  text-align: center;
+  position: relative;
+  width: 127px;
+  height: 165px;
+}
+.shopDetail .detail .fitting .goodSuits .master img {
+  width: 87px;
+}
+.shopDetail .detail .fitting .goodSuits .master p {
+  color: #c81623;
+  font-size: 16px;
+}
+.shopDetail .detail .fitting .goodSuits .master i {
+  position: absolute;
+  top: 48px;
+  right: -25px;
+  font-size: 16px;
+}
+.shopDetail .detail .fitting .goodSuits .suits {
+  float: left;
+  width: 668px;
+  height: 165px;
+}
+.shopDetail .detail .fitting .goodSuits .suits .item {
+  float: left;
+  width: 127px;
+  margin: 0 20px;
+  text-align: center;
+}
+.shopDetail .detail .fitting .goodSuits .result {
+  float: left;
+  border-left: 1px solid #ddd;
+  width: 153px;
+  height: 165px;
+  padding-left: 20px;
+}
+.shopDetail .detail .fitting .goodSuits .result div {
+  margin: 10px 0;
+}
+.shopDetail .detail .fitting .goodSuits .result h5 {
+  margin-bottom: 10px;
+}
+.shopDetail .detail .fitting .goodSuits .result p {
+  margin-bottom: 10px;
+  color: #b1191a;
+  font-size: 16px;
+}
+.shopDetail .detail .fitting .goodSuits .result button {
+  outline: none;
+  border: none;
+  padding: 10px 25px;
+  color: #fff;
+  background-color: #E1251B;
+  font-size: 16px;
+}
+.shopDetail .detail .intro {
+  float: right;
+  width: 100%;
+}
+.shopDetail .detail .intro .tabWrap {
+  height: 40px;
+  background-color: #ededed;
+}
+.shopDetail .detail .intro .tabWrap li {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 11px;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  box-sizing: border-box;
+  border-left: 1px solid #ddd;
+}
+.shopDetail .detail .intro .tabWrap li.active {
+  background-color: #E1251B;
+}
+.shopDetail .detail .intro .tabContent > div {
+  display: none;
+}
+.shopDetail .detail .intro .tabContent > div.active {
+  display: block;
+}
+.shopDetail .detail .intro .tabContent > div ul li {
+  margin: 10px 0;
+  padding-left: 10px;
+}
